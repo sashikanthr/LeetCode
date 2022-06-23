@@ -63,22 +63,4 @@ public class MergeTwoSortedLists {
     }
 }
 
-/*Below class definition is from LeetCode*/
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(){
-
-    }
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
-    @Override
-    public String toString() {
-        return val+"->"+next;
-    }
-}
 
