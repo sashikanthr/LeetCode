@@ -47,7 +47,6 @@ class Solution {
         for (int i = cost.length - 1; i >= 0; i--) {
             output[i] = Math.min(output[i + 1], output[i + 2]) + cost[i];
         }
-        if (cost.length == 1) return output[0];
         return Math.min(output[0], output[1]);
     }
 
