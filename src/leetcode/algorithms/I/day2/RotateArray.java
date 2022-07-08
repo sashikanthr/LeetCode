@@ -36,20 +36,15 @@ public class RotateArray {
 
     public static void main(String[] args) {
         RotateArray rotateArray = new RotateArray();
-        rotateArray.rotate(new int[]{1,2,3,4,5},6);
+        rotateArray.rotate(new int[]{1,2},3);
     }
 
     public void rotate(int[] nums, int k) {
             int length = nums.length;
             reverse(nums, 0, length - 1);
-            k = length/k==0?k:(k-length)%k;
+            k = k<length?k:k%length;
             reverse(nums, 0, k - 1);
-            reverse(nums, k, length - 1);
-            for (int num : nums) {
-                System.out.println(num);
-            }
-
-    }
+            reverse(nums, k, length - 1);    }
 
     private void reverse(int[] nums, int startIndex, int endIndex) {
         int temp;
