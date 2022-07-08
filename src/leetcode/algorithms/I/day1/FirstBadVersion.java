@@ -1,4 +1,4 @@
-package leetcode.algorithms.I;
+package leetcode.algorithms.I.day1;
 
 /*
 
